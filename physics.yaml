@@ -1,0 +1,38 @@
+materials:
+  friction_coeff:
+    "wood" : 0.20
+    "steel" : 0.75
+    "ice" : 0.10
+    "rubber" : 1.16
+    "glass" : 0.90
+  density:
+    "wood" : 0.60
+    "steel" : 7.85
+    "ice" : 0.92
+    "rubber" : 1.55
+    "glass" : 2.5
+  color:
+    "wood" : "gold"
+    "steel" : "grey"
+    "ice" : "ivory"
+    "rubber" : "tan"
+    "glass" : "wheat"
+
+environment:
+  gravity_accel:
+    "earth" : 9.81
+    "moon" : 1.63
+    "mars" : 3.71
+  color:
+    "earth" : "cyan"
+    "moon" : "lime"
+    "mars" : "orange"
+
+# Assumptions:
+# 1. We assume that this coefficient is only determined by the slope materials.
+# 2. The volume density is used even we are simulating in 2-d cases.
+units:
+  friction_coeff : None
+  density : "10^3 kg/m^3"
+  gravity_accel : "m/s^2" 
+
