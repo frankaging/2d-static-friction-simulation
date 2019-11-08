@@ -229,13 +229,14 @@ if __name__ == "__main__":
 							env=env,
 							show=False)
 		output_name = "_".join(["ID", str(i), str(label)[0]])
-		sample.savefig('./samples/' + output_name + '.png')
+		sample.savefig('../DATASET/samples/' + output_name + '.png',
+					   bbox_inches = 'tight', pad_inches = 0)
 		row = [output_name, str(label), slope_material, block_material,
 			   env, str(angle), str(b_width), str(b_height), str(b_depth)]
 		rows.append(row)
 	print("Wiriting metadata to a file...")
 	# write metadata as well
-	with open('./samples/metadata.csv', mode='w') as _file:
+	with open('../DATASET/samples/metadata.csv', mode='w') as _file:
 		_file_w = csv.writer(_file, delimiter=',')
 		_file_w.writerow(headers)
 		for row in rows:
