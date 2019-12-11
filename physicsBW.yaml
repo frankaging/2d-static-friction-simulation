@@ -1,32 +1,16 @@
 materials:
   friction_coeff:
-    "wood" : 0.29
-    "steel" : 0.45
-    "ice" : 0.10
-    "rubber" : 1.06
-    "glass" : 0.70
-  density:
     "wood" : 0.40
-    "steel" : 7.85
-    "ice" : 0.92
-    "rubber" : 1.25
-    "glass" : 2.5
+  density:
+    "wood" : 0.60
   color:
-    "wood" : "gold"
-    "steel" : "grey"
-    "ice" : "ivory"
-    "rubber" : "tan"
-    "glass" : "wheat"
+    "wood" : "black"
 
 environment:
   gravity_accel:
     "earth" : 9.81
-    "moon" : 1.63
-    "mars" : 3.71
   color:
     "earth" : "cyan"
-    "moon" : "lime"
-    "mars" : "orange"
 
 # Assumptions:
 # 1. We assume that this coefficient is only determined by the slope materials.
